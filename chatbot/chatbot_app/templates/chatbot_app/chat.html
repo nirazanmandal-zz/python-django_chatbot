@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Chat {% endblock %}
+{% block banner %}
+    <div class="banner"></div>
+{% endblock %}
+
+{% block navbar %}
+    {% include 'navbar.html' %}
+{% endblock %}
+
+{% block content %}
+<section class="section section-shaped section-lg">
+    <div class="shape shape-style-1 bg-gradient-default">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="container pt-lg-7">
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <div class="card bg-secondary shadow border-0" style="margin-top: -90px;">
+                    {% if msg_send %}
+                    <div class="card-header bg-dark pb-5 pt-3">
+                        <div class="text-muted text-center mb-4">
+                            <i class="far fa-comments"></i>&nbsp;<b>Chat Box</b>
+                        </div>
+                        <div class="alert alert-light alert-light text-dark text-left">
+                            <b>{{ bot }}</b> {{ botreply }}
+                        </div>
+                        <div class="alert alert-light text-dark text-left">
+                            <b>{{ msg_send }}:</b> {{ userreply }}
+                        </div>
+                    </div>
+                    {% else %}
+                    <div class="card-header bg-dark pb-5 pt-3">
+                        <div class="text-muted text-center mb-4">
+                            <i class="far fa-comments"></i>&nbsp;<b>Chat Box</b>
+                        </div>
+                        <div class="alert alert-light alert-light text-dark text-left">
+                            <b>Bot: </b> Welcome {{ user }}
+                        </div>
+                        <div class="alert alert-light text-dark text-left">
+                            <b>{{ user }}:</b> <small>Type message to get reply</small>
+                        </div>
+                    </div>
+                    {% endif %}
+                    <div class="card-body bg-primary pt-5">
+                        <form action="{% url 'chat:script' %}" role="form" method="POST">
+                            {% csrf_token %}
+                            <div class="form-group focused">
+                                <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Type your message" name="message" id="password" required>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-white my-4">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+{% include 'footer.html' %}
+{% endblock %}

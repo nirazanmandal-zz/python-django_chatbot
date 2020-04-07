@@ -1,0 +1,93 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up", "Excuse me"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "bye"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+         "context_set": ""
+        },
+        {"tag": "age",
+         "patterns": ["what is your age", "how old are you", "age?"],
+         "responses": ["I am 5 years old!", "i'm immortal"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?", "Who are you?"],
+         "responses": ["You can call me bot.", "I'm a bot!", "I'm a bot aka ChatBot.", "bot...chatbot"],
+         "context_set": ""
+        },
+        {"tag": "library",
+         "patterns": ["Where is library?", "library block"],
+         "responses": ["2nd floor, Block A"],
+         "context_set": ""
+        },
+        {"tag": "block",
+         "patterns": ["Where is student service?", "How many blocks are there?", "where is student block?", "Where is RTE?", "where is finance department?"],
+         "responses": ["1st floor, Block A", "we do have 2 blocks.", "2 blocks"],
+         "context_set": ""
+        },
+        {"tag": "located",
+         "patterns": ["when are you guys open?", "where do you located", "location"],
+         "responses": ["sundaricha, morang"],
+         "context_set": ""
+        },
+        {"tag": "language",
+         "patterns": ["Which language do you speak?", "your language"],
+         "responses": ["I mostly speak in python", "python"],
+         "context_set": ""
+        },
+        {"tag": "courses",
+         "patterns": ["Which courses do you have in your college?", "your courses"],
+         "responses": ["we do have BBA and BIT.", "BBA and BIT"],
+         "context_set": ""
+        },
+        {"tag": "fee",
+         "patterns": ["university fee", "fee", "what is your fee", "Admission fee"],
+         "responses": ["$500", "6800 admission fee"],
+         "context_set": ""
+        },
+        {"tag": "bba",
+         "patterns": ["BBA duration"],
+         "responses": ["3.5 years BBA"],
+         "context_set": ""
+        },
+        {"tag": "bsc",
+         "patterns": ["B.Sc. Computing course duration", "Bsc duration", "B.Sc. Computing SEM fee"],
+         "responses": ["3 years Bsc", "B.Sc. computing fee is 645000"],
+         "context_set": ""
+        },
+        {"tag": "number",
+         "patterns": ["what is the phone number of college?", "can you tell the phone number of college?", "can i get the phone number of college?", "number please", "phone number please"],
+         "responses": ["98692558083, 025-583636", "here is the numbers: 98692558083, 025-583636"],
+         "context_set": ""
+        },
+        {"tag": "program",
+         "patterns": ["What are the programmes do we have in this college?", "programmes in college"],
+         "responses": ["BSc(Hons)Computing, BA(Hons)Business Administration"],
+         "context_set": ""
+        },
+        {"tag": "intake",
+         "patterns": ["When are the intakes?", "month of intakes", "admission month", "month of admission"],
+         "responses": ["Autumn(May-oct), Spring(Nov-Feb)"],
+         "context_set": ""
+        },
+        {"tag": "email",
+         "patterns": ["What is the email id of the college?", "email of college", "email id of college"],
+         "responses": ["info@iic.edu.np"],
+         "context_set": ""
+        },
+        {"tag": "website",
+         "patterns": ["what is the website of this college?", "website of college"],
+         "responses": ["iic.edu.np"],
+         "context_set": ""
+        },
+        {"tag": "facility",
+         "patterns": ["what facilities do you have?","Do you have sports facilities?", "Do you have canteen facility?", "Is bus facility available in collage?", "is there bus facility?"],
+         "responses": ["we have facilities like: sports, canteen, bus and many more..","Yes we do have sports like: Football, cricket, volleyball, basketball, cheese, tabletennies.", "yes, we do have canteen facility", "yes we do have bus facility"],
+         "context_set": ""
+        }
+   ]
+}
